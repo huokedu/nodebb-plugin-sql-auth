@@ -2,7 +2,9 @@
 
 var controllers = require('./lib/controllers'),
 
-	plugin = {};
+
+	plugin = {},
+    meta = require('../../src/meta');
 
 plugin.init = function(params, callback) {
 	var router = params.router,
@@ -15,6 +17,7 @@ plugin.init = function(params, callback) {
 	router.get('/admin/plugins/sql-auth', hostMiddleware.admin.buildHeader, controllers.renderAdminPage);
 	router.get('/api/admin/plugins/sql-auth', controllers.renderAdminPage);
 
+	console.log(meta.config['sql-auth:hostname']);
 
 	callback();
 };

@@ -1,6 +1,8 @@
 "use strict";
 
+
 (function() {
+
     /*
      This file shows how client-side javascript can be included via a plugin.
      If you check `plugin.json`, you'll see that this file is listed under "scripts".
