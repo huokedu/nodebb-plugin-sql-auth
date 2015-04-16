@@ -1,6 +1,6 @@
 {
-	"id": "nodebb-plugin-quickstart",
-	"url": "https://github.com/NodeBB/nodebb-plugin-quickstart",
+	"id": "nodebb-plugin-sql-auth",
+	"url": "https://github.com/zetas/nodebb-plugin-sql-auth.git",
 	"library": "./library.js",
 	"hooks": [
 		{
@@ -13,11 +13,8 @@
 	"staticDirs": {
 		"static": "./static"
 	},
-	"less": [
-		"static/style.less"
-	],
 	"scripts": [
-		"static/lib/main.js",
+	    "static/lib/main.js",
 		"static/lib/admin.js"
 	],
 	"templates": "static/templates"

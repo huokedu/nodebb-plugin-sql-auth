@@ -1,25 +1,26 @@
 {
-  "name": "nodebb-plugin-quickstart",
-  "version": "0.2.1",
-  "description": "A starter kit for quickly creating NodeBB plugins",
+  "name": "nodebb-plugin-sql-auth",
+  "version": "0.0.1",
+  "description": "NodeBB plugin to authenticate against a SQL database.",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-plugin-quickstart"
+    "url": "https://github.com/zetas/nodebb-plugin-sql-auth.git"
   },
   "keywords": [
     "nodebb",
     "plugin",
-    "quickstart",
-    "shell"
+    "sql",
+    "authentication",
+    "login"
   ],
   "author": {
-    "name": "psychobunny",
-    "email": "psycho.bunny@hotmail.com"
+    "name": "Zetas",
+    "email": "ddv@qubitlogic.net"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/psychobunny/nodebb-plugin-quickstart/issues"
+    "url": "https://github.com/zetas/nodebb-plugin-sql-auth/issues"
   },
   "readmeFilename": "README.md",
   "nbbpm": {

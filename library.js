@@ -12,17 +12,18 @@ plugin.init = function(params, callback) {
 	// We create two routes for every view. One API call, and the actual route itself.
 	// Just add the buildHeader middleware to your route and NodeBB will take care of everything for you.
 
-	router.get('/admin/plugins/quickstart', hostMiddleware.admin.buildHeader, controllers.renderAdminPage);
-	router.get('/api/admin/plugins/quickstart', controllers.renderAdminPage);
+	router.get('/admin/plugins/sql-auth', hostMiddleware.admin.buildHeader, controllers.renderAdminPage);
+	router.get('/api/admin/plugins/sql-auth', controllers.renderAdminPage);
+
 
 	callback();
 };
 
 plugin.addAdminNavigation = function(header, callback) {
 	header.plugins.push({
-		route: '/plugins/quickstart',
+		route: '/plugins/sql-auth',
 		icon: 'fa-tint',
-		name: 'Quickstart'
+		name: 'SQL Auth'
 	});
 
 	callback(null, header);
